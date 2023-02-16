@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+   <!-- JQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- W2UI -->
+   <link defer rel="stylesheet" type="text/css" href="https://w2ui.com/src/w2ui-1.4.2.min.css" />
+   <!-- Style.css -->
+   <link rel="stylesheet" href="wwwroot/css/style.css">
+   <title>ViiKDev</title>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar">
+         <div class="logo"><a onclick="scrollToElement('home')">vkdev</a></div>
+         <ul class="options">
+            <li onclick="scrollToElement('about')">About</li>
+            <li onclick="scrollToElement('projects')">Projects</li>
+            <li><span>Curriculum</span></li>
+            <li onclick="scrollToElement('contact')">Contact</li>
+         </ul>
+      </nav>
+   </header>
+   <main id="home">
+      <div class="wrapper">
+         <h1 class="animate-on-scroll">Hey, I'm Viktor!</h1>
+         <div class="cont">
+            <h4 class="animate-on-scroll">I'm a junior front-end developer, using the languages: <span class="animate-on-scroll"></span></h4>
+         </div>
+      </div>
+      <div class="scroll-down-arrow animate-on-scroll">
+         <span><i class="fa fa-angle-down" onclick="scrollToElement('about')"></i></span>
+      </div>
+   </main>
+   <!-- <div class="fade-line"></div> -->
+   <section id="about">
+      <div class="wrapper">
+         <h1>About Me</h1>
+         <div class="wrapperLR">
+            <div class="left">
+               <div class="img"></div>
+               <div class="curriculum">
+                  <span><i class="fa fa-eye" style="color:var(--detail-color)"></i> View Curriculum</span>
+               </div>
+            </div>
+            <div class="right">
+               <div class="up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nihil rem cumque, et aspernatur repellendus nulla fuga ad commodi quae id ratione quis? Maxime nam quasi, libero modi commodi nisi.</div>
+               <div class="down"></div>
+            </div>
+         </div>
+      </div>
+      <div class="scroll-down-arrow animate-on-scroll">
+         <span><i class="fa fa-angle-down" onclick="scrollToElement('projects')"></i></span>
+      </div>
+   </section>
+   <div class="fade-line4"></div>
+   <section id="projects">
+      <div class="wrapper">
+         <h1>Projects With Previews</h1>
+         <ul id="projectsList">
+         </ul>
+      </div>
+   </section>
+   <div class="fade-line5"></div>
+   <footer id="contact">
+      <div class="info">
+         <h3>VKDev</h3>
+         <div class="leaf-container">
+            <i class="fa fa-leaf leaf1 animate-on-scroll" style="color:green;"></i>
+            <p class="animate-on-scroll"> Just a dev who loves coffee, chilling and programming. </p>
+            <i class="fa fa-leaf leaf2 animate-on-scroll" style="color:green;"></i>
+         </div>
+         <ul class="socials">
+            <li><a href="https://br.linkedin.com/in/viktor-bonazza-charlanti-244890212" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://www.instagram.com/viik_bonazza/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/ViiKDev" target="_blank"><i class="fa fa-github"></i></a></li>
+         </ul>
+      </div>
+      <div class="fade-line3"></div>
+      <div class="copy">
+         <p>copyright &copy;2022 ViiKDev. designed by <span>ViiKDev</span></p>
+      </div>
+   </footer>
+</body>
+
+<!-- W2UI -->
+<script type="text/javascript" src="https://w2ui.com/src/w2ui-1.4.2.min.js"></script>
+<!-- Script.js -->
+<script src="wwwroot/js/script.js"></script>
+
+</html>
