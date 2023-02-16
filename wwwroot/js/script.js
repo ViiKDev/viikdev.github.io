@@ -2,6 +2,9 @@ const styleVars = document.documentElement.style
 const animationElements = document.querySelectorAll('.animate-on-scroll')
 const projectsList = document.querySelector('#projectsList')
 
+let aboutLanguages = ["HTML", "CSS", "JavaScript", "React", "React-Native"]
+let aboutDatabases = ["Prisma", "SQLite"]
+
 const getRepos = () => {
 	projectsList.appendChild(createSkeleton())
 	fetch('https://api.github.com/users/ViiKDev/repos')
@@ -79,7 +82,36 @@ function removeSkeleton() {
 	projectsList.removeChild(document.querySelector('skeleton'))
 }
 
-// Click Detections
+function mountString(list) {
+	let str = list[0]
+	for (let i = 1; i < list.length; i++) {
+		str = str + ', ' + list[i]
+	}
+	return str
+}
+
+function generateTooltip(obj, type) {
+	let objPos = obj.offset()
+	let objWidth = obj[0].offsetWidth
+	let tooltip = document.createElement('div')
+	tooltip.classList.add('tooltip')
+
+	let span = document.createElement('span')
+	span.innerText = type == 'lang' ? mountString(aboutLanguages) : type == 'dbs' ? mountString(aboutDatabases) : 'This should\'nt have happened!'
+	tooltip.appendChild(span)
+
+	document.querySelector('body').appendChild(tooltip)
+
+	let tooltipWidth = $('.tooltip')[0].offsetWidth
+
+
+	$('.tooltip').offset({
+		top: objPos.top + 28,
+		left: objPos.left - (tooltipWidth / 2) + (objWidth / 2)
+	})
+}
+
+// JQuery Detections
 
 $('.curriculum span').click(function () {
 	w2popup.open({
@@ -94,6 +126,14 @@ $('.options li span').click(function () {
 		body: '<div class="w2ui-centered"><a href="../wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><button class="download-button"><i class="fa fa-download"></i><span>Download</span></button></a><img src="../wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></div>'
 	});
 });
+
+$('.aboutSpan').mouseover(function () {
+	generateTooltip($(this), this.getAttribute('forList'))
+})
+
+$('.aboutSpan').mouseout(function () {
+	$('.tooltip').remove()
+})
 
 // Test Purposes
 
