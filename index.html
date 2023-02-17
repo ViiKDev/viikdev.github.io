@@ -21,10 +21,16 @@
    <header>
       <nav class="navbar">
          <div class="logo"><a onclick="scrollToElement('home')">vkdev</a></div>
+         <div class="hamburguer">
+            <i class="fa fa-bars"></i>
+         </div>
          <ul class="options">
             <li onclick="scrollToElement('about')">About</li>
             <li onclick="scrollToElement('projects')">Projects</li>
-            <li><span>Curriculum</span></li>
+            <li>
+               <span>Curriculum</span>
+               <span class="mobile">Curriculum</span>
+            </li>
             <li onclick="scrollToElement('contact')">Contact</li>
          </ul>
       </nav>
@@ -46,10 +52,7 @@
          <h1>About Me</h1>
          <div class="wrapperLR">
             <div class="left">
-               <div class="img"></div>
-               <div class="curriculum">
-                  <span><i class="fa fa-eye" style="color:var(--detail-color)"></i> View Curriculum</span>
-               </div>
+               <img src="./wwwroot/img/me.jpeg" alt="Viktor's Photo">
             </div>
             <div class="right">
                <div class="up">
@@ -71,7 +74,16 @@
                      As a Brazilian, my native idiom is Portuguese, but I also speak English (intermediate) and Spanish (basic).
                   </span>
                </div>
-               <div class="down"></div>
+               <div class="down">
+                  <div class="curriculum">
+                     <span><i class="fa fa-eye" style="color:var(--detail-color)"></i> View Curriculum</span>
+                  </div>
+               </div>
+               <div class="down mobile">
+                  <div class="curriculum">
+                     <span class="mobile"><i class="fa fa-eye" style="color:var(--detail-color)"></i> View Curriculum</span>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
