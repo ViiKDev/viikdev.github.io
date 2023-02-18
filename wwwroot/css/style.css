@@ -795,6 +795,18 @@ innerSkeleton {
 	}
 }
 
+@keyframes mobile-menu-items {
+
+	60% {
+		box-shadow: none;
+	}
+
+	100% {
+		transform: translateX(0);
+		box-shadow: 0 1px 0 gray;
+	}
+}
+
 /* KeyFrames */
 
 /* W2ui */
@@ -926,7 +938,7 @@ innerSkeleton {
 
 @media (max-width:599px) {
 	h1 {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 
 	.navbar {
@@ -957,7 +969,18 @@ innerSkeleton {
 		flex-direction: column;
 		text-align: center;
 		border-radius: 0 0 12px 12px;
+		/* To hide last box-shadow */
+		overflow-x: hidden;
 		animation: show-mobile-menu 1s ease-in-out forwards
+	}
+
+	.navbar ul li {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: translateX(-100%);
+		animation: mobile-menu-items 1s ease-in-out forwards;
 	}
 
 	.navbar ul li span:not(.mobile) {
@@ -998,6 +1021,7 @@ innerSkeleton {
 	#about .wrapper .wrapperLR .right {
 		width: 100%;
 		align-items: center;
+		font-size: 1.1rem;
 	}
 
 	#about .wrapper .wrapperLR .right .down {

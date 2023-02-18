@@ -9,7 +9,9 @@ const getRepos = () => {
 	projectsList.appendChild(createSkeleton())
 	fetch('https://api.github.com/users/ViiKDev/repos')
 		.then((response) => response.json())
-		.then((data) => listRepos(data))
+		.then((data) => {
+			listRepos(data)
+		})
 }
 
 getRepos()
@@ -57,7 +59,7 @@ function listRepos(data) {
 
 function createLi({ name, description }) {
 	let li = document.createElement('li')
-	li.title = description
+	li.title = description ? description : 'This project has no description'
 
 	let a = document.createElement('a')
 	a.classList.add('projs')
@@ -159,8 +161,19 @@ $('.hamburguer').click(function () {
 	} else {
 		list.addClass('active')
 		$('header')[0].style.setProperty('background-color', 'black')
+		for (let i = 0; i < list[0].children.length; i++) {
+			console.log(list[0].children[i])
+			// add delay to animations
+		}
 	}
+})
 
+window.addEventListener('click', function (e) {
+	if (!document.querySelector('.hamburguer').contains(e.target)) {
+		let list = $('ul.options')
+		list.removeClass('active')
+		$('header')[0].removeAttribute('style')
+	}
 })
 
 // Test Purposes
