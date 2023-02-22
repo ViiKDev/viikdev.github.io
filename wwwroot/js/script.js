@@ -50,7 +50,7 @@ function listRepos(data) {
 	removeSkeleton()
 	for (let i = 0; i < data.length; i++) {
 		let name = data[i].name
-		if (name.includes('HCJ-') || name.includes('React-') || name.includes('uranimes')) {
+		if (data[i].has_pages === true && !name.includes('viikdev')) {
 			let li = createLi(data[i])
 			projectsList.appendChild(li)
 		}
