@@ -118,14 +118,14 @@ function generateTooltip(obj, type) {
 $('.curriculum span:not(.mobile)').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
-		body: '<div class="w2ui-centered"><a href="../wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><button class="download-button"><i class="fa fa-download"></i><span>Download</span></button></a><img src="../wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></div>'
+		body: '<div class="w2ui-centered"><a href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><button class="download-button"><i class="fa fa-download"></i><span>Download</span></button></a><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></div>'
 	});
 });
 
 $('.options li span:not(.mobile)').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
-		body: '<div class="w2ui-centered"><a href="../wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><button class="download-button"><i class="fa fa-download"></i><span>Download</span></button></a><img src="../wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></div>'
+		body: '<div class="w2ui-centered"><a href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><button class="download-button"><i class="fa fa-download"></i><span>Download</span></button></a><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></div>'
 	});
 });
 
@@ -142,14 +142,14 @@ $('.aboutSpan').mouseout(function () {
 $('.curriculum .mobile').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
-		body: '<div class="w2ui-centered"><a class="animate-curriculum-download" href="../wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><span>Click to Download</span><img src="../wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></a></div>'
+		body: '<div class="w2ui-centered"><a class="animate-curriculum-download" href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><span>Click to Download</span><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></a></div>'
 	});
 });
 
 $('.options li .mobile').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
-		body: '<div class="w2ui-centered"><a class="animate-curriculum-download" href="../wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><span>Click to Download</span><img src="../wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></a></div>'
+		body: '<div class="w2ui-centered"><a class="animate-curriculum-download" href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><span>Click to Download</span><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></a></div>'
 	});
 });
 
