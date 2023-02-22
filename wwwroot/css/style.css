@@ -919,6 +919,7 @@ innerSkeleton {
 	transform: translate(-50%, -50%);
 	color: var(--font-color);
 	z-index: 99;
+	pointer-events:none;
 }
 
 .tooltip::after {
