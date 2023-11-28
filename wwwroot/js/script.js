@@ -123,12 +123,13 @@ function generateTooltip(obj, type) {
 }); */
 $('.curriculum').click(function () {window.open('./curriculum.html', "_blank")})
 
-$('.options li span:not(.mobile)').click(function () {
+/* $('.options li span:not(.mobile)').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
 		body: '<div class="w2ui-centered"><a href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><button class="download-button"><i class="fa fa-download"></i><span>Download</span></button></a><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></div>'
 	});
-});
+}); */
+$('.options li span:not(.mobile)').click(function () {window.open('./curriculum.html', "_blank")})
 
 $('.aboutSpan').mouseover(function () {
 	generateTooltip($(this), this.getAttribute('forList'))
