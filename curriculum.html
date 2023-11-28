@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Viktor Bonazza Charlanti</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            font-family: sans-serif;
+            background-color: #fcfcfc;
+        }
+
+        main {
+            width: 1050px;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .fs-17 {
+            font-size: 17px;
+        }
+
+        .fs-23 {
+            font-size: 23px;
+        }
+
+        .fs-26 {
+            font-size: 25px;
+        }
+
+        .fs-32 {
+            font-size: 32px;
+        }
+
+        span {
+            display: block;
+            max-width: 90%;
+        }
+
+        .gap-20 {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mt-30 {
+            margin-top: 30px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .pl-20 {
+            padding-left: 20px;
+        }
+
+        .pl-40 {
+            padding-left: 40px;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        button {
+            background-color: rgb(80, 80, 237);
+            color: white;
+            padding: 6px;
+            border-radius: 4px;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        button:hover {
+            background-color: rgb(3, 3, 128);
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+
+            main {
+                height: auto;
+            }
+        }
+
+        @page {
+            size: auto;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="window.print()">Download PDF</button>
+    <main>
+        <!-- 210 x 297 -->
+        <section class="name">
+            <span class="bold fs-32 mt-30">Viktor Bonazza Charlanti</span>
+        </section>
+        <div class="container">
+            <div class="left">
+                <div class="gap-20">
+                    <section class="role">
+                        <span class="bold fs-26 mt-30 mb-20">Desenvolvedor Front-end</span>
+                        <span class="fs-17 mb-10">Sou um desenvolvedor front-end e, nos últimos meses, tenho desenvolvido websites, sistemas e automações, utilizando das melhores práticas e ferramentas do mercado.</span>
+                        <span class="fs-17">Minhas especialidades são: Python, React, React-Native, C#, HTML, CSS e JavaScript.</span>
+                    </section>
+                    <section class="experience mt-20">
+                        <span class="bold fs-26 mb-20">Experiência</span>
+                        <span class="fs-17">Freelancer, Barra Bonita - SP</span>
+                        <span class="fs-17">Desenvolvedor Freelancer</span>
+                        <span class="fs-17">Janeiro 2022 - <span class="italic inline">Presente</span></span>
+                    </section>
+                    <section class="main-projects mt-20">
+                        <span class="bold fs-26 mb-20">Principais Projetos</span>
+                        <span class="bold fs-17 mb-10">Plataforma de streaming de vídeos - UrAnimes <a href="https://viikdev.github.io/uranimes">(link)</a></span>
+                        <span class="fs-17">Sistema front-end com o intuito de reunir e disponibilizar uma variedade de vídeos para os usuários poderem assistir.</span>
+                        <span class="fs-17 mt-10">Tecnologias: HTML, CSS, JavaScript</span>
+                        <span class="bold fs-17 mt-20 mb-10">Aplicativo de acervo de literatura brasileira - Lecture <a href="https://viikdev.github.io/booksApi">(link)</a></span>
+                        <span class="fs-17">Sistema front-end e back-end que reúne, em um aplicativo, uma gama de livros e obras da literatura brasileira que podem ser lidos e impressos. Também disponibilizado em formato de API para que outros desenvolvedores possam usufruir.</span>
+                        <span class="fs-17 mt-10">Tecnologias: C# (Windows Forms), JSON</span>
+                    </section>
+                </div>
+            </div>
+            <div class="right pl-40">
+                <div class="gap-20">
+                    <section class="contact">
+                        <span class="bold fs-26 mt-30 mb-20">Contato</span>
+                        <span class="bold fs-17">Portfólio: <a href="https://viikdev.github.io">viikdev.github.io</a></span>
+                        <span class="bold fs-17">GitHub: <a href="https://github.com/viikdev">/viikdev</a></span>
+                        <span class="bold fs-17">WhatsApp: <a href="https://wa.me/+5514910049542?text=Olá, Viktor! Estava analisando seu currículo e resolvi entrar em contato.">(14) 9 1004-9542</a></span>
+                        <span class="bold fs-17">E-mail: <a onclick="navigator.clipboard.writeText('vkbonnazzac@gmail.com')" href="#">vkbonnazzac@gmail.com</a></span>
+                    </section>
+                    <section class="tecnologies mt-20">
+                        <span class="bold fs-26 mb-20">Tecnologias</span>
+                        <span class="fs-17">Python, HTML, CSS, JavaScript, C#, React, React-Native, Java, MySQL, PHP.</span>
+                    </section>
+                    <section class="skills mt-20">
+                        <span class="bold fs-26 mb-20">Educação e Skills</span>
+                        <span class="fs-17 mb-10"><span class="bold inline">Ciência da Computação</span>, Unisagrado - 2023 à 2026</span>
+                        <span class="fs-17 mb-10"><span class="bold inline">Técnico em Desenvolvimento de Sistemas</span>, ETEC Comendador João Rays - 2021 à 2022</span>
+                        <span class="fs-17"><span class="bold inline">TOEIC Bridge</span>, Teste de Proficiência em Inglês (<span class="italic inline">Mastertest Certificação Internacional</span>) - <span class="italic inline">98/100</span></span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

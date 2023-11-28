@@ -115,12 +115,13 @@ function generateTooltip(obj, type) {
 
 // JQuery Detections
 
-$('.curriculum span:not(.mobile)').click(function () {
+/* $('.curriculum span:not(.mobile)').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
 		body: '<div class="w2ui-centered"><a href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><button class="download-button"><i class="fa fa-download"></i><span>Download</span></button></a><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></div>'
 	});
-});
+}); */
+$('.curriculum').click(function () {window.open('./curriculum.html', "_blank")})
 
 $('.options li span:not(.mobile)').click(function () {
 	w2popup.open({
@@ -139,19 +140,21 @@ $('.aboutSpan').mouseout(function () {
 
 // For Mobile
 
-$('.curriculum .mobile').click(function () {
+/* $('.curriculum .mobile').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
 		body: '<div class="w2ui-centered"><a class="animate-curriculum-download" href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><span>Click to Download</span><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></a></div>'
 	});
-});
+}); */
+$('.curriculum .mobile').click(function () {window.open('./curriculum.html', "_blank")})
 
-$('.options li .mobile').click(function () {
+/* $('.options li .mobile').click(function () {
 	w2popup.open({
 		title: 'Curriculum',
 		body: '<div class="w2ui-centered"><a class="animate-curriculum-download" href="./wwwroot/ext/Curriculum Vitae - Viktor Bonazza Charlanti.pdf" download><span>Click to Download</span><img src="./wwwroot/img/Curriculum Vitae - Viktor Bonazza Charlanti.png"></img></a></div>'
 	});
-});
+}); */
+$('.options li .mobile').click(function () {window.open('./curriculum.html', "_blank")})
 
 $('.hamburguer').click(function () {
 	let list = $('ul.options')
@@ -162,7 +165,7 @@ $('.hamburguer').click(function () {
 		list.addClass('active')
 		$('header')[0].style.setProperty('background-color', 'black')
 		for (let i = 0; i < list[0].children.length; i++) {
-			console.log(list[0].children[i])
+			// console.log(list[0].children[i])
 			// add delay to animations
 		}
 	}
